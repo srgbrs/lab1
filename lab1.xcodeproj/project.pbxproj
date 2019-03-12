@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		180A211B22387DCD00C1CA29 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 180A211A22387DCD00C1CA29 /* main.cpp */; };
+		180A212222387DE000C1CA29 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 180A212122387DE000C1CA29 /* functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		180A211722387DCD00C1CA29 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		180A211A22387DCD00C1CA29 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		180A212122387DE000C1CA29 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		180A212322387DE700C1CA29 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		180A212422387E4200C1CA29 /* students.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = students.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,10 @@
 		180A211922387DCD00C1CA29 /* lab1 */ = {
 			isa = PBXGroup;
 			children = (
+				180A212422387E4200C1CA29 /* students.csv */,
 				180A211A22387DCD00C1CA29 /* main.cpp */,
+				180A212322387DE700C1CA29 /* Header.h */,
+				180A212122387DE000C1CA29 /* functions.cpp */,
 			);
 			path = lab1;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180A211B22387DCD00C1CA29 /* main.cpp in Sources */,
+				180A212222387DE000C1CA29 /* functions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

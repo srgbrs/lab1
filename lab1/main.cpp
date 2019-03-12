@@ -1,15 +1,13 @@
-//
-//  main.cpp
-//  lab1
-//
-//  Created by Sergey on 3/13/19.
-//  Copyright © 2019 sergey. All rights reserved.
-//
-
 #include <iostream>
+#include "Header.h"
+#include <fstream>
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    ifstream input("/Users/apple/Desktop/lab1/lab1/students.csv");
+    
+    
     return 0;
 }

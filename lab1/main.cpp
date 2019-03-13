@@ -8,6 +8,9 @@ int main(int argc, const char * argv[]) {
 
     ifstream input("/Users/apple/Desktop/lab1/lab1/students.csv");
     
+    int q1 = studentsAmmount(input);
+    int q2 = budgetStudentsAmount(q1);
+    
     
     return 0;
 }

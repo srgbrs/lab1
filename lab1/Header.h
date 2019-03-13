@@ -2,6 +2,12 @@
 #ifndef Header_h
 #define Header_h
 
+#include <fstream>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 struct student {
     string name;
     bool isContract;
@@ -9,5 +15,8 @@ struct student {
     
     float averageMark;
 };
+
+int studentsAmmount(ifstream &input);
+int budgetStudentsAmount(int &studentsAmmount);
 
 #endif /* Header_h */

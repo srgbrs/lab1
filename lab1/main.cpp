@@ -11,6 +11,9 @@ int main(int argc, const char * argv[]) {
     int q1 = studentsAmmount(input);
     int q2 = budgetStudentsAmount(q1);
     
+    student *allStudents = new student[q1];
+    readFile(input, q1, allStudents);
+    
     
     return 0;
 }

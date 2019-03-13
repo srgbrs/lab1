@@ -19,4 +19,8 @@ struct student {
 int studentsAmmount(ifstream &input);
 int budgetStudentsAmount(int &studentsAmmount);
 
+void readFile(ifstream &input, int ammount, student *allStudents);
+student scanLine(string line);
+bool isNumber(string &line);
+
 #endif /* Header_h */

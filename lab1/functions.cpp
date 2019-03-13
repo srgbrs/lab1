@@ -102,13 +102,21 @@ void sortStudents(int &studentsAmmount, student *budgetStudents){
 }
 
 void showStipuha(student *budgetStudents, int &studentsAmmount) {
+    ofstream fout("Results.csv");
+    //float min = 100.0;
     for (int i=0; i<studentsAmmount; i++)
     {
         cout << budgetStudents[i].name << " ";
+        fout << budgetStudents[i].name << " ";
         cout << budgetStudents[i].averageMark << endl;
+        fout << budgetStudents[i].averageMark << endl;
         //        if (budgetStudents[i].isContract)
         //            cout << "Contract" <<endl;
         //        else cout << "Budget" <<endl;
     }
+    cout << endl;
+    fout << endl;
+    cout << "Minimum mark for Stipa = " << budgetStudents[studentsAmmount-1].averageMark << endl;
+    fout << "Minimum mark for Stipa = " << budgetStudents[studentsAmmount-1].averageMark << endl;
     
 }

@@ -75,3 +75,28 @@ void readFile(ifstream &input, int ammount, student *allStudents) {
         allStudents[i] = scanLine(l);
     }
 }
+
+void fillBudget(student *allStudents, student *budgetStudents, int &studentsAmmount) {
+    int counter = 0;
+    for (int i=0; i<studentsAmmount; i++)
+    {
+        
+        if (!allStudents[i].isContract)
+            budgetStudents[counter++] = allStudents[i];
+    }
+}
+
+void sortStudents(int &studentsAmmount, student *budgetStudents){
+    for(int i = 0; i < studentsAmmount; i++)
+    {
+        for(int j = 0; j < studentsAmmount - i - 1; j++)
+        {
+            if(budgetStudents[j].averageMark < budgetStudents[j+1].averageMark)
+            {
+                student temp = budgetStudents[j];
+                budgetStudents[j] = budgetStudents[j+1];
+                budgetStudents[j+1] = temp;
+            }
+        }
+    }
+}

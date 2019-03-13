@@ -23,4 +23,9 @@ void readFile(ifstream &input, int ammount, student *allStudents);
 student scanLine(string line);
 bool isNumber(string &line);
 
+void fillBudget(student *allStudents, student *budgetStudents, int &studentsAmmount);
+
+void sortStudents(int &studentsAmmount, student *budgetStudents);
+
+
 #endif /* Header_h */

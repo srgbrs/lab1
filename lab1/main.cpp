@@ -14,6 +14,10 @@ int main(int argc, const char * argv[]) {
     student *allStudents = new student[q1];
     readFile(input, q1, allStudents);
     
+    student *budgetStudents = new student[q1];
+    
+    fillBudget(allStudents, budgetStudents, q1);
+    sortStudents(q1, budgetStudents);
     
     return 0;
 }

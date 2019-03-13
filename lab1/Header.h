@@ -26,6 +26,6 @@ bool isNumber(string &line);
 void fillBudget(student *allStudents, student *budgetStudents, int &studentsAmmount);
 
 void sortStudents(int &studentsAmmount, student *budgetStudents);
-
+void showStipuha(student *budgetStudents, int &studentsAmmount);
 
 #endif /* Header_h */

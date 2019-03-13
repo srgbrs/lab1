@@ -100,3 +100,15 @@ void sortStudents(int &studentsAmmount, student *budgetStudents){
         }
     }
 }
+
+void showStipuha(student *budgetStudents, int &studentsAmmount) {
+    for (int i=0; i<studentsAmmount; i++)
+    {
+        cout << budgetStudents[i].name << " ";
+        cout << budgetStudents[i].averageMark << endl;
+        //        if (budgetStudents[i].isContract)
+        //            cout << "Contract" <<endl;
+        //        else cout << "Budget" <<endl;
+    }
+    
+}

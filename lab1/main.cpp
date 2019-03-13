@@ -19,5 +19,7 @@ int main(int argc, const char * argv[]) {
     fillBudget(allStudents, budgetStudents, q1);
     sortStudents(q1, budgetStudents);
     
+    showStipuha(budgetStudents, q2);
+    
     return 0;
 }
